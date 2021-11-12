@@ -11,17 +11,16 @@ function Footer() {
     <footer>
       <div className="link">
         <a
-          href="https://github.com/covid19india"
-          target="_blank"
+          href="localhost:3000"
           rel="noopener noreferrer"
         >
-          covid19india
+          covid19Fact
         </a>
       </div>
 
-      <h5>{t('We stand with everyone fighting on the frontlines')}</h5>
+      {/* <h5>{t('We stand with everyone fighting on the frontlines')}</h5> */}
 
-      <div className="links">
+      {/* <div className="links">
         <a
           href="https://github.com/covid19india/covid19india-react"
           className="github"
@@ -75,7 +74,7 @@ function Footer() {
         >
           <Mail />
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 }

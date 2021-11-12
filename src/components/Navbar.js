@@ -53,13 +53,13 @@ function Navbar({pages, showLanguageSwitcher, setShowLanguageSwitcher}) {
 
   return navbarTransition((style, item) => (
     <animated.div className="Navbar" {...{style}}>
-      <div className="navbar-left" onClick={handleLanguageSwitcher}>
-        {locales[currentLanguage]}
+      <div className="navbar-left" /*onClick={handleLanguageSwitcher}*/>
+        {/* {locales[currentLanguage]} */}
       </div>
 
       <div className="navbar-middle">
         <Link to="/" onClick={setExpand.bind(this, false)}>
-          Covid19<span>India</span>
+          Covid19<span>Fact</span>
         </Link>
       </div>
 
@@ -81,7 +81,7 @@ function Navbar({pages, showLanguageSwitcher, setShowLanguageSwitcher}) {
                 <Home {...activeNavIcon('/')} />
               </span>
             </Link>
-            <Link to="/blog">
+            {/* <Link to="/blog">
               <span>
                 <Book {...activeNavIcon('/blog')} />
               </span>
@@ -95,10 +95,10 @@ function Navbar({pages, showLanguageSwitcher, setShowLanguageSwitcher}) {
               <span>
                 <HelpCircle {...activeNavIcon('/about')} />
               </span>
-            </Link>
-            <span>
+            </Link> */}
+            {/* <span>
               <SunMoon {...{darkMode}} />
-            </span>
+            </span> */}
           </>
         )}
       </div>
@@ -148,9 +148,9 @@ function Expand({pages, setExpand, darkMode, windowSize}) {
 
       {windowSize.width < 769 && <SunMoon {...{darkMode}} />}
 
-      <div className="expand-bottom">
+      {/* <div className="expand-bottom">
         <h5>{t('A crowdsourced initiative.')}</h5>
-      </div>
+      </div> */}
     </div>
   );
 }
